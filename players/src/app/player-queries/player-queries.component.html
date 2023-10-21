@@ -1,0 +1,29 @@
+<p>player-queries works!</p>
+<div class="queries-component" *ngIf="playersFromEngland.length > 0">
+    <h2>Players from England</h2>
+    <div *ngFor="let player of playersFromEngland">{{ player.name }}</div>
+ </div>
+  
+  <div class="queries-component" *ngIf="highestGoalScorer">
+    <h2>Highest Goal Scorer</h2>
+    <p>Name: {{ highestGoalScorer.name }}</p>
+    <p>Goals: {{ highestGoalScorer.goals }}</p>
+  </div>
+  
+  <div class="queries-component" *ngIf="highestAssistMaker">
+    <h2>Highest Assist Maker</h2>
+    <p>Name: {{ highestAssistMaker.name }}</p>
+    <p>Assists: {{ highestAssistMaker.assists }}</p>
+  </div>
+  
+  <div class="queries-component" *ngIf="highestTackles">
+    <h2>Highest Tackles</h2>
+    <p>Name: {{ highestTackles.name }}</p>
+    <p>Tackles: {{ highestTackles.tackles }}</p>
+  </div>
+  
+  <div class="queries-component" *ngIf="playersSortedByMatches.length > 0">
+    <h2>Players Sorted by Matches Played</h2>
+    <div *ngFor="let player of playersSortedByMatches">{{ player.name }}</div>
+  </div>
+  <button (click)="navigateToHomePage()">HomePage</button>

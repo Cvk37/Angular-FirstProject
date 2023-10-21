@@ -1,0 +1,22 @@
+<h2><strong>{{ playerName }}</strong></h2>
+<table>
+    <tr>
+      <td><strong>Goals:</strong></td>
+      <td>{{ playerStats.goals }}</td>
+    </tr>
+    <tr>
+      <td><strong>Assists:</strong></td>
+      <td>{{ playerStats.assists }}</td>
+    </tr>
+    <tr>
+      <td><strong>Tackles:</strong></td>
+      <td>{{ playerStats.tackles }}</td>
+    </tr>
+  </table>
+  <div style="margin-top: 20px;">
+    <button (click)="navigateToUpdatePlayer()">Update Player</button>
+    <button (click)="deletePlayer()">Delete Player</button>
+    <button (click)="navigateToHomePage()">Back to Index</button>
+  </div> 
+
+  

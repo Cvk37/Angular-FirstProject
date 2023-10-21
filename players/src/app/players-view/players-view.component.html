@@ -1,0 +1,21 @@
+<table>
+  <tr>
+    <td>
+      <h1>Manchester City</h1>
+      <ul>
+        <li *ngFor="let player of players">
+            <a [routerLink]="['stats',player._id]">{{ player.name }} - {{ player.country }}</a>
+        </li>
+      </ul>
+
+      <button (click)="navigateToAddPlayer()">Add Player</button>
+    </td>
+    <td>
+      <img src="assets/ManCity.jpg" alt="">
+    </td>
+    <td>
+      <button (click)="navigateToQueries()" class="query-button">Queries</button>
+    </td>
+  </tr>
+</table>
+

@@ -1,0 +1,26 @@
+<h2>Update Player</h2>
+<form #updatePlayerForm="ngForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" [(ngModel)]="player.name" required>
+
+  <label for="country">Country:</label>
+  <input type="text" id="country" name="country" [(ngModel)]="player.country" required>
+
+  <label for="position">Position:</label>
+  <input type="text" id="position" name="position" [(ngModel)]="player.position" required>
+
+  <label for="matches">Matches:</label>
+  <input type="number" id="matches" name="matches" [(ngModel)]="player.matches" required>
+
+  <label for="goals">Goals:</label>
+  <input type="number" id="goals" name="goals" [(ngModel)]="player.goals" required>
+
+  <label for="assists">Assists:</label>
+  <input type="number" id="assists" name="assists" [(ngModel)]="player.assists" required>
+
+  <label for="tackles">Tackles:</label>
+  <input type="number" id="tackles" name="tackles" [(ngModel)]="player.tackles" required>
+
+  <button type="submit">Update Player</button>
+</form>
+

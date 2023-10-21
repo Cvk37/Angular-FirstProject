@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+$blue:#6CABDD;
+$darkblue:#1C2C5B;
+$light:#fff5ee;
+$gold:#FFC659;
+$darkgold:#D4A12A;
+$red:#EC3325;
+
+$family-sans-serif: 'Roboto Condensed', sans-serif;
+$base-font-size: 0px;
+
+$control-border-width : 2px;
+$input-border-color:transparent;
+$input-shadow:none;
+
+html{
+    background: linear-gradient(to right top ,$gold,$blue,$darkblue);
+    height: 100%;
+    
+}
+h1{
+    transform: translate(190px, 0px);
+    font-family: $family-sans-serif;
+    background: linear-gradient(to right top, $blue,$darkgold 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+    
+
+  
+
+  
+img {
+    transform: translate(270px,-250px) scale(0.11);
+  }
+.player-header{
+
+    color: $darkblue;
+    
+}
+h1 {
+    font: 50px sans-serif;
+    transform: translate(500px);
+  }
+  h2{
+    font: 1.5em sans-serif;
+  }
+ul{
+    padding: 2%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.queries-component{
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.query-button{
+    transform: translate(600px,10px);
+}
