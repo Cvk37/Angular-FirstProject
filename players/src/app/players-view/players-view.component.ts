@@ -26,7 +26,6 @@ export class PlayersViewComponent implements OnInit {
       (response: any) => {
         
         if (response && response.data && Array.isArray(response.data)) {
-          // Transform the data object into an array of players
           this.players = response.data.map((player: any) => {
             return {
               _id : player._id,
@@ -36,7 +35,7 @@ export class PlayersViewComponent implements OnInit {
               goals: player.goals,
               assists: player.assists,
               tackles: player.tackles,
-              // Add more properties if needed
+              
             };
           });
         } else {
