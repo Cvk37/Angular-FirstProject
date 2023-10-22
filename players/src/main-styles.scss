@@ -17,6 +17,7 @@ $input-shadow:none;
 html{
     background: linear-gradient(to right top ,$gold,$blue,$darkblue);
     height: 100%;
+    font-size:  20px;
     
 }
 h1{
@@ -55,6 +56,7 @@ ul{
 .queries-component{
     padding-bottom: 10px;
     margin-left: 10px;
+    margin-top: 10px;
 }
 .query-button{
     transform: translate(600px,10px);
